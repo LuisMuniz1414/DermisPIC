@@ -1,2 +1,0 @@
-# DermisPIC
-Proyecto final
