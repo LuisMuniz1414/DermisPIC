@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "VICAR",
+			"path": "."
+		},
+		{
+			"name": "ADA",
+			"path": "../../../../../../../ACADÉMICOS/UAM/TRABAJOS TRIMESTRALES/7. Septimo Trimestre/UEA_VII_Producción_y_Comunicación_En_La_Cultura_Colaborativa/PROYECTO UEA 7/ADA"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "VICAR"
+	}
+}

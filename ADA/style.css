@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Rubik+Microbe&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* evita scroll por el canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de botones */
+.container {
+    position: relative;
+    z-index: 10; /* Asegura que quede sobre Hydra */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+/* Filas de botones */
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: rgb(157, 91, 67);
+    color: white;
+    font-size: 18px;
+    padding: 100px 100px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animación al pasar el mouse */
+button:hover {
+    background-color: rgb(214, 161, 127);
+    transform: scale(1.15);
+}
+
+/* === Hydra Canvas === */
+.hydra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* detrás de todo */
+}
+
+/* Corrige comportamiento del canvas generado por Hydra */
+canvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important; /* el canvas siempre va al fondo */
+    pointer-events: none !important; /* evita bloquear clics */
+}
+
+
+.backbtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 20; /* por encima de todo */
+    font-family: 'Barrio', cursive;
+    font-size: 20px;
+    color: rgb(154, 97, 70);
+
+}
+
+.backbtn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(201, 141, 107);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.backbtn a:hover {
+    background-color: rgb(154, 97, 70);
+    transform: scale(1.05);
+}
