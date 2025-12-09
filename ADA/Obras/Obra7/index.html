@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La costra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/hydra-synth"></script>
+</head>
+<body>
+    <div class="backbtn">
+        <a href="../../index.html">Regresar</a>
+    </div>
+
+    <div class="homebtn">
+        <a href="../../../index.html">Home</a>
+    </div>
+
+    <div class="panel">
+        <h1>La Costra</h1>
+        <h2>Obra de Arte Generativa</h2>
+        <h3>Artista: ADA </h3>
+        <h3>Año: 2024</h3>
+        <p>
+            La costra protege la herida, se crea con el tiempo, y se arranca con un dolor placentero. La costra es parte de la piel, la costra sana, la costra cicatriza, la costra es recuerdo.
+        </p>
+    </div>
+    <button class="toggle-panel">Ocultar Info</button>
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle-panel');
+        const panel = document.querySelector('.panel');
+        
+        toggleBtn.addEventListener('click', () => {
+            panel.classList.toggle('hidden');
+            toggleBtn.textContent = panel.classList.contains('hidden') ? 'Mostrar Info' : 'Ocultar Info';
+        });
+    </script>
+
+    <div class="hydra">
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
